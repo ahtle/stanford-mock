@@ -195,7 +195,7 @@ picture {
 }
 
 figure, img, picture {
-    width: auto;
+    width: 100%;
     height: auto;
     max-width: 100%;
     max-height: none;
@@ -290,7 +290,7 @@ article .content {
     margin-bottom: .333333em;
 }
 
-.post-meta .post-category {
+.post-meta .post-category, .tag {
     color: #820000;
     text-transform: uppercase;
     font-weight: 600;
@@ -329,13 +329,13 @@ article .content {
     width: 23%;
 }
 
-#more-news-container {
+.call-to-action {
     display: block;
     text-align: center;
     padding-top: 1em;
 }
 
-#more-news-container a {
+.call-to-action a {
     display: inline-block;
     font-size: 1.25em;
     text-decoration: none;
@@ -378,5 +378,52 @@ article .content {
     box-shadow: 0 0 10px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1);
     font-size: 1.25em;
 }
-/************ utility *************/
 
+/* third section  */
+.panel.theme--choco {
+    background-color: #2f2424;
+    color: #fff;
+}
+
+#third-section header {
+    text-align: center;
+}
+
+#third-section header h2 {
+    font-size: 3.0517578125em;
+}
+
+#third-section header p {
+    font-size: 1.5625em;
+}
+
+#third-section .panel .grid-container figure{
+    width: 23%;
+    background-color: #fff;
+}
+
+figure .content-container {
+    position: relative;
+    padding: 48px 24px 24px;
+}
+
+figure .content-container .date {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2f2424;
+    width: 70px;
+    height: 70px;
+    top: -40px;
+}
+
+figure .content-container .date span {
+    display: block;
+    text-align: center;
+}
+
+figure .content-container .content time {
+    color: #000;
+}
+/************ utility *************/
